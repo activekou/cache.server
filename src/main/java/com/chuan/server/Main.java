@@ -1,5 +1,8 @@
 package com.chuan.server;
 
+import java.util.List;
+import java.util.Map;
+
 import com.chuan.server.business.SimpleDevCache;
 
 import io.netty.buffer.ByteBuf;
@@ -26,5 +29,8 @@ public class Main {
 	
 	public static void put(ByteBuf msg){
 		cache.put(msg);
+	}
+	public static Map<String,List<String>> get(ByteBuf msg){
+		return cache.get(msg);
 	}
 }

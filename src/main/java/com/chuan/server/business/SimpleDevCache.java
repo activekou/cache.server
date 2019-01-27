@@ -48,4 +48,11 @@ public class SimpleDevCache {
 		}
 	}
 
+	public Map<String,List<String>> get(ByteBuf msg){
+		int len = msg.readInt();
+		byte[] devByte = new byte[len];
+		msg.readBytes(devByte, 0, len);
+		String dev = new String(devByte);
+		return dev2market2pack.get(dev);
+	}
 }
