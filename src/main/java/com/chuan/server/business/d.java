@@ -4,4 +4,7 @@ public class d {
 	public static void m() {
 		
 	}
+	public void abc() {
+		
+	}
 }
