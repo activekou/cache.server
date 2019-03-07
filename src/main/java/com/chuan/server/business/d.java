@@ -6,7 +6,7 @@ public class d {
 	}
 
 	public void abc() {
-		
+		System.out.println("abc");
 	}
 	public String xyz() {
 		return "dev";
